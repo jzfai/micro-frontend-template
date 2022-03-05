@@ -12,7 +12,7 @@
     <el-button type="primary" @click="toParent">ParentChildEmit</el-button>
 
     <div class="mt-2">测试vuex</div>
-    <el-button @click="testVuex" type="error">test vuex</el-button>
+    <el-button @click="testVuex" type="danger">test vuex</el-button>
     <!--    <div>{{ username }}</div>-->
   </div>
 </template>

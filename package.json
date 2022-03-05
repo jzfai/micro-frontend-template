@@ -1,8 +1,8 @@
 {
-  "name": "vue3-micro-frontend",
+  "name": "micro-frontend-template",
   "private": true,
   "packageManager": "pnpm",
-  "version": "0.0.1",
+  "version": "1.4.1",
   "scripts": {
     "hostall:dev": "run-p remote:preview host:dev",
     "hostall:preview-offline": "run-p remote:preview host:preview-offline",

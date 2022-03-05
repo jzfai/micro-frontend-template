@@ -11,8 +11,7 @@
     "build": "vite build --mode build",
     "preview": "npm run build && vite preview ",
     "preview-offline": "npm run build:test && vite preview ",
-    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix",
-    "prepare": "husky install"
+    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix"
   },
   "dependencies": {
     "vue": "3.2.31"

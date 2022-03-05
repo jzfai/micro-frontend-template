@@ -10,7 +10,6 @@
     "build:test": "vite build --mode  build-test",
     "build": "vite build --mode build",
     "preview": "npm run build && vite preview ",
-    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix",
-    "prepare": "husky install"
+    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix"
   }
 }

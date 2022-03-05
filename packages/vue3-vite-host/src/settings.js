@@ -88,7 +88,7 @@ const setting = {
    * vite.config.js base config
    * such as
    * */
-  viteBasePath: '/vue3-micro-frontend/'
+  viteBasePath: '/micro-frontend-template/'
 }
 
 export default setting

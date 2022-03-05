@@ -1,4 +1,4 @@
-# vue3-micro-frontend
+# micro-frontend-template
 
 **中文** | [English](./README.md)
 
@@ -26,13 +26,13 @@ Vite 需要 Node.js 版本 >= 12.0.0。
 
 ## 线上体验
 
-[github address](https://github.com/jzfai/vue3-micro-frontend.git)
+[github address](https://github.com/jzfai/micro-frontend-template.git)
 
-[Access address](http://8.135.1.141/vue3-micro-frontend)
+[Access address](http://8.135.1.141/micro-frontend-template)
 
-github 地址：  https://github.com/jzfai/vue3-micro-frontend.git
+github 地址：  https://github.com/jzfai/micro-frontend-template.git
 
-国内体验地址：http://8.135.1.141/vue3-micro-frontend
+国内体验地址：http://8.135.1.141/micro-frontend-template
 
 
 ## 例子
@@ -47,7 +47,7 @@ github 地址：  https://github.com/jzfai/vue3-micro-frontend.git
 
 框架有js，ts，plus和electron版本
 
-- js版本：[vue3-element-admin](https://github.com/jzfai/vue3-micro-frontend.git)
+- js版本：[vue3-element-admin](https://github.com/jzfai/micro-frontend-template.git)
 - ts版本：[vue3-element-ts](https://github.com/jzfai/vue3-admin-ts.git)
 - js实例参考plus版本：[vue3-element-plus](https://github.com/jzfai/vue3-admin-plus.git)
 - electron版本：[vue3-element-electron](https://github.com/jzfai/vue3-admin-electron.git)
@@ -70,16 +70,16 @@ vue3和vue2在性能上的对比
 
 - **重写虚拟DOM的实现和Tree-Shaking**
 
-[vite2和webpack打包速度上的对比](https://github.com/jzfai/vue3-micro-frontend/issues/2)
+[vite2和webpack打包速度上的对比](https://github.com/jzfai/micro-frontend-template/issues/2)
 
 ## Build Setup
 
 ```bash
 # clone the project
-git clone https://github.com/jzfai/vue3-micro-frontend.git
+git clone https://github.com/jzfai/micro-frontend-template.git
 
 # enter the project directory
-cd vue3-micro-frontend
+cd micro-frontend-template
 
 # pnpm address https://pnpm.io/zh/motivation
 # install dependency(Recommend use pnpm)
@@ -90,7 +90,7 @@ pnpm i
 pnpm run hostall:dev
 ```
 
-using the browser to open http://localhost:5001
+using the browser to open http://localhost:5012/vue3-micro-frontend
 
 ## Build
 
@@ -129,7 +129,7 @@ Modern browsers and Internet Explorer 11+.
 
 ## 版本
 
-[MIT](https://github.com/jzfai/vue3-micro-frontend/blob/master/LICENSE) license.
+[MIT](https://github.com/jzfai/micro-frontend-template/blob/master/LICENSE) license.
 
 Copyright (c) 2021-present  kuanghua
 

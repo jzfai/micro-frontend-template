@@ -1,10 +1,10 @@
-# vue3-micro-frontend
+# micro-frontend-template
 
 **English** | [中文](./README-zh_CN.md)
 
-> A minimal vue3-micro-frontend with Element-Plus UI & axios & permission control & lint & hook
+> A minimal micro-frontend-template with Element-Plus UI & axios & permission control & lint & hook
 
-A new  generation vue3-micro-frontend  construct  using  vue3(setup-script)+vite2+element-plus ，It's fast!
+A new  generation micro-frontend-template  construct  using  vue3(setup-script)+vite2+element-plus ，It's fast!
 
 Use eslint+prettier+gitHooks format and verification code to improve code standardization and development efficiency
 
@@ -22,13 +22,13 @@ Vite need Node.js >= 12.0.0。
 
 ## Online experience
 
-[github address](https://github.com/jzfai/vue3-micro-frontend.git)
+[github address](https://github.com/jzfai/micro-frontend-template.git)
 
-[Access address](http://8.135.1.141/vue3-micro-frontend)
+[Access address](http://8.135.1.141/micro-frontend-template)
 
-国内体验地址：http://8.135.1.141/vue3-micro-frontend
+国内体验地址：http://8.135.1.141/micro-frontend-template
 
-github 地址：  https://github.com/jzfai/vue3-micro-frontend.git
+github 地址：  https://github.com/jzfai/micro-frontend-template.git
 
 ## Demo
 
@@ -41,7 +41,7 @@ github 地址：  https://github.com/jzfai/vue3-micro-frontend.git
 ## Related items
 
 The framework is available in js, ts , plus and electron versions
-- js version：[vue3-element-admin](https://github.com/jzfai/vue3-micro-frontend.git)
+- js version：[vue3-element-admin](https://github.com/jzfai/micro-frontend-template.git)
 - ts version：[vue3-element-ts](https://github.com/jzfai/vue3-admin-ts.git)
 - js version for plus：[vue3-element-plus](https://github.com/jzfai/vue3-admin-plus.git)
 - js version for electron：[vue3-element-electron](https://github.com/jzfai/vue3-admin-electron.git)
@@ -64,16 +64,16 @@ The framework is available in js, ts , plus and electron versions
 - **Rewrite the implementation of virtual DOM and Tree-Shaking**
 
 
-[Comparison of packaging speed between vite2 and webpack](https://github.com/jzfai/vue3-micro-frontend/issues/2)
+[Comparison of packaging speed between vite2 and webpack](https://github.com/jzfai/micro-frontend-template/issues/2)
 
 ## Build Setup
 
 ```bash
 # clone the project
-git clone https://github.com/jzfai/vue3-micro-frontend.git
+git clone https://github.com/jzfai/micro-frontend-template.git
 
 # enter the project directory
-cd vue3-micro-frontend
+cd micro-frontend-template
 
 # pnpm address https://pnpm.io/zh/motivation
 # install dependency(Recommend use pnpm)
@@ -84,7 +84,7 @@ pnpm i
 pnpm run hostall:dev
 ```
 
-using the browser to open http://localhost:5001
+using the browser to open  http://localhost:5012/vue3-micro-frontend/
 
 ## Build
 
@@ -121,7 +121,7 @@ Modern browsers and Internet Explorer 11+.
 
 ## License
 
-[MIT](https://github.com/jzfai/vue3-micro-frontend/blob/master/LICENSE) license.
+[MIT](https://github.com/jzfai/micro-frontend-template/blob/master/LICENSE) license.
 
 Copyright (c) 2021-present  kuanghua
 

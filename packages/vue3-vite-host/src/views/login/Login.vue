@@ -1,4 +1,3 @@
-<!--suppress ALL -->
 <template>
   <div class="login-container columnCC">
     <el-form ref="refloginForm" class="login-form" :model="formInline" :rules="formRules">
@@ -27,8 +26,8 @@
             v-model="formInline.password"
             :type="passwordType"
             name="password"
-            @keyup.enter="handleLogin"
             placeholder="password(123456)"
+            @keyup.enter="handleLogin"
           />
           <span class="show-pwd" @click="showPwd">
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
@@ -72,7 +71,7 @@ let getOtherQuery = (query) => {
 }
 
 watch(
-  () => route.query,
+  route.query,
   (query) => {
     if (query) {
       state.redirect = query.redirect
@@ -151,7 +150,7 @@ $light_gray: #eee;
     .title {
       font-size: 22px;
       color: #eee;
-      margin: 0px auto 25px auto;
+      margin: 0 auto 25px auto;
       text-align: center;
       font-weight: bold;
     }
@@ -206,5 +205,9 @@ $light_gray: #eee;
     height: 42px; //此处调整item的高度
     caret-color: #fff;
   }
+  .el-input__inner{
+    box-shadow:none!important;
+  }
+
 }
 </style>
