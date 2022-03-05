@@ -1,0 +1,84 @@
+{
+  "name": "vue3-micro-frontend",
+  "private": true,
+  "packageManager": "pnpm",
+  "version": "0.0.1",
+  "scripts": {
+    "hostall:dev": "run-p remote:preview host:dev",
+    "hostall:preview-offline": "run-p remote:preview host:preview-offline",
+    "hostall:preview": "run-p remote:preview host:preview",
+    "host:dev": "pnpm run --dir packages/vue3-vite-host dev",
+    "host:preview": "pnpm run --dir packages/vue3-vite-host preview",
+    "host:preview-offline": "pnpm run --dir packages/vue3-vite-host preview-offline",
+    "remote:preview": "pnpm run --dir packages/vue3-vite-remote preview",
+    "remote:dev": "pnpm run --dir packages/vue3-vite-remote dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "peerDependencies": {
+    "vue": "3.2.29"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "0.2.4",
+    "axios": "0.21.3",
+    "echarts": "4.2.1",
+    "element-plus": "^2.0.2",
+    "mitt": "3.0.0",
+    "moment-mini": "2.22.1",
+    "nprogress": "0.2.0",
+    "path": "0.12.7",
+    "path-to-regexp": "6.2.0",
+    "tinymce": "4.9.11",
+    "vue": "3.2.31",
+    "vue-router": "4.0.12",
+    "vuex": "4.0.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.16.3",
+    "@originjs/vite-plugin-federation": "^1.1.1",
+    "npm-run-all": "^4.1.5",
+    "@types/echarts": "4.9.7",
+    "@types/mockjs": "1.0.3",
+    "@types/node": "15.0.1",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "@vitejs/plugin-legacy": "1.6.4",
+    "@vitejs/plugin-vue": "1.10.2",
+    "@vitejs/plugin-vue-jsx": "1.3.1",
+    "@vue3-vite/host": "workspace:*",
+    "@vue3-vite/remote": "workspace:*",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-define-config": "1.2.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-vue": "8.1.1",
+    "husky": "7.0.2",
+    "mockjs": "1.1.0",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "rollup-plugin-copy": "3.4.0",
+    "sass": "1.32.12",
+    "scss": "0.2.4",
+    "svg-sprite-loader": "6.0.11",
+    "typescript": "4.3.2",
+    "unplugin-auto-import": "0.5.11",
+    "unplugin-vue-components": "0.17.14",
+    "vite": "2.8.4",
+    "vite-plugin-html": "3.0.6",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-style-import": "1.2.1",
+    "vite-plugin-svg-icons": "1.0.5",
+    "vite-plugin-vue-setup-extend": "0.4.0",
+    "vue-tsc": "0.28.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">= 14"
+  }
+}

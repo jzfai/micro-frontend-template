@@ -1,0 +1,10 @@
+.history
+.idea
+node_modules
+assets
+.DS_Store
+dist
+dist-ssr
+*.local
+yarn*
+pnpm*

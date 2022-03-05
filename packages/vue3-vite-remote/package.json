@@ -1,0 +1,16 @@
+{
+  "name": "@vue3-vite/remote",
+  "version": "1.4.1",
+  "private": true,
+  "license": "ISC",
+  "author": "kuanghua(869653722@qq.com)",
+  "scripts": {
+    "dev": "vite --mode serve-dev --host",
+    "test": "vite --mode serve-test --host",
+    "build:test": "vite build --mode  build-test",
+    "build": "vite build --mode build",
+    "preview": "npm run build && vite preview ",
+    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix",
+    "prepare": "husky install"
+  }
+}
