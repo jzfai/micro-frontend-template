@@ -83,14 +83,14 @@ export default ({ command, mode }) => {
         // refTransform: true // 开启ref转换 还是实验性   use example for $ref
       }),
       vueJsx(),
-      federation({
-        name: 'vue3-vite-host',
-        filename: 'vue3-vite-host.js',
-        remotes: {
-          'vue3-vite-remote': `${loadEnv(mode, process.cwd()).VITE_APP_REMOTE_URL}/assets/vue3-vite-remote.js`
-        },
-        shared: ['vue']
-      }),
+      // federation({
+      //   name: 'vue3-vite-host',
+      //   filename: 'vue3-vite-host.js',
+      //   remotes: {
+      //     'vue3-vite-remote': `${loadEnv(mode, process.cwd()).VITE_APP_REMOTE_URL}/assets/vue3-vite-remote.js`
+      //   },
+      //   shared: ['vue']
+      // }),
 
       // legacy({
       //   targets: ['ie >= 11'],
@@ -151,7 +151,7 @@ export default ({ command, mode }) => {
     build: {
       polyfillModulePreload: false,
       assetsInlineLimit: 40960,
-      target: 'esnext',
+      target: 'modules',
       minify: false,
       cssCodeSplit: false,
       brotliSize: false,

@@ -1,6 +1,6 @@
 import path, { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
-// import legacy from '@vitejs/plugin-legacy'
+import legacy from '@vitejs/plugin-legacy'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import viteSvgIcons from 'vite-plugin-svg-icons'
 
@@ -31,6 +31,8 @@ import setting from './src/settings'
 // import { loadEnv } from 'vite'
 const prodMock = setting.openProdMock
 // import packageJson from './package.json'
+
+import topLevelAwait from 'vite-plugin-top-level-await'
 
 export default ({ command }) => {
   /*
@@ -88,11 +90,15 @@ export default ({ command }) => {
         filename: 'vue3-vite-remote.js',
         exposes: {
           './FromRemote': './src/federation/FromRemote.vue',
-          './Parent': './src/views/example/parent-children/Parent.vue',
-          './VuexUse': './src/views/example/vuex-use/VuexUse.vue',
           './Vue3ViteRemote': './src/federation/Vue3ViteRemote.vue'
         },
-        shared: ['vue', 'vuex', 'element-plus']
+        shared: ['vue']
+      }),
+      topLevelAwait({
+        // The export name of top-level await promise for each chunk module
+        promiseExportName: '__tla',
+        // The function to generate import names of top-level await promise in each chunk module
+        promiseImportName: (i) => `__tla_${i}`
       }),
       // copy({
       //   targets: [
@@ -163,29 +169,12 @@ export default ({ command }) => {
     build: {
       polyfillModulePreload: false,
       assetsInlineLimit: 40960,
-      target: 'esnext',
-      minify: false,
+      minify: 'terser',
       cssCodeSplit: false,
-      brotliSize: false,
-      // 消除打包大小超过500kb警告
-      chunkSizeWarningLimit: 5000,
-      //remote console.log in prod
-      terserOptions: {
-        //detail to look https://terser.org/docs/api-reference#compress-options
-        compress: {
-          drop_console: false,
-          pure_funcs: ['console.log', 'console.info'],
-          drop_debugger: true
-        }
-      },
-      //build assets Separate
-      // assetsDir: 'static/assets',
       rollupOptions: {
+        // external: ["vue"],
         output: {
           minifyInternalExports: false
-          // chunkFileNames: 'static/js/[name]-[hash].js',
-          // entryFileNames: 'static/js/[name]-[hash].js',
-          // assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
         }
       }
     },
